@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.tizen.example.ServiceApp" version="1.0.0" api-version="4" xmlns="http://tizen.org/ns/packages">
+    <profile name="common" />
+    <service-application appid="org.tizen.example.ServiceApp" exec="ServiceApp.dll" multiple="false" nodisplay="true" taskmanage="false" type="dotnet" splash-screen-display="true">
+        <label>ServiceApp</label>
+        <icon>ServiceApp.png</icon>
+        <datacontrol providerid="http://org.tizen.example.ServiceApp/datacontrol/provider/test" access="ReadWrite" type="Sql" trusted="true" />
+        <splash-screens />
+    </service-application>
+    <shortcut-list />
+    <privileges>
+        <privilege>http://tizen.org/privilege/datasharing</privilege>
+    </privileges>
+    <provides-appdefined-privileges />
+</manifest>
